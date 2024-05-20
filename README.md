@@ -4,11 +4,10 @@ This repository complements the [Custom Enumerables Project](https://www.theodin
 
 ## My Progress
 
-- [x] `Array#my_each`
 - [ ] `Enumerable#my_any?`
 - [ ] `Enumerable#my_count`
-- [ ] `Enumerable#my_each`
-- [ ] `Enumerable#my_each_with_index`
+- [x] `Enumerable#my_each`
+- [x] `Enumerable#my_each_with_index`
 - [ ] `Enumerable#my_inject`
 - [ ] `Enumerable#my_map`
 - [ ] `Enumerable#my_none?`
