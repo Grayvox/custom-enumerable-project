@@ -4,6 +4,7 @@ This repository complements the [Custom Enumerables Project](https://www.theodin
 
 ## My Progress
 
+- [ ] `Enumerable#my_all?`
 - [ ] `Enumerable#my_any?`
 - [ ] `Enumerable#my_count`
 - [x] `Enumerable#my_each`
