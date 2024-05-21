@@ -1,8 +1,6 @@
 module Enumerable
   def my_any?(arg = nil, &block)
     found = 0
-    return false if self.empty?
-
     self.my_each { |element| found += 1 if element } if !block_given? && arg.nil?
     self.my_each { |element| found += 1 if element == arg } if !block_given? && !arg.nil?
     self.my_each { |element| found += 1 if block.call(element) } if block_given? && arg.nil?
