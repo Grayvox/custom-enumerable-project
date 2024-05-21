@@ -44,4 +44,12 @@ module Enumerable
       index += 1
     end
   end
+
+  def my_none?(arg = nil, &block)
+    without_target = self.size
+    self.my_each { |element| without_target -= 1 if element } if !block_given? && arg.nil?
+    self.my_each { |element| without_target -= 1 if element == arg } if !block_given? && !arg.nil?
+    self.my_each { |element| without_target -= 1 if block.call(element) } if block_given? && arg.nil?
+    without_target >= self.size
+  end
 end

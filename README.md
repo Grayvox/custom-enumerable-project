@@ -11,5 +11,5 @@ This repository complements the [Custom Enumerables Project](https://www.theodin
 - [x] `Enumerable#my_each_with_index`
 - [ ] `Enumerable#my_inject`
 - [ ] `Enumerable#my_map`
-- [ ] `Enumerable#my_none?`
+- [x] `Enumerable#my_none?`
 - [ ] `Enumerable#my_select`
