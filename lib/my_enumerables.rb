@@ -45,6 +45,13 @@ module Enumerable
     end
   end
 
+  def my_map(&block)
+    arr = []
+    self.my_each { |element| arr << element if element } unless block_given?
+    self.my_each { |element| arr << block.call(element) } if block_given?
+    arr
+  end
+
   def my_none?(arg = nil, &block)
     without_target = self.size
     self.my_each { |element| without_target -= 1 if element } if !block_given? && arg.nil?
