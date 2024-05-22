@@ -52,4 +52,12 @@ module Enumerable
     self.my_each { |element| without_target -= 1 if block.call(element) } if block_given? && arg.nil?
     without_target >= self.size
   end
+
+  def my_select(arg = nil, &block)
+    arr = []
+    self.my_each { |element| arr << element if element } if !block_given? && arg.nil?
+    self.my_each { |element| arr << element if element == arg } if !block_given? && !arg.nil?
+    self.my_each { |element| arr << element if block.call(element) } if block_given? && arg.nil?
+    arr
+  end
 end

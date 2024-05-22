@@ -12,4 +12,4 @@ This repository complements the [Custom Enumerables Project](https://www.theodin
 - [ ] `Enumerable#my_inject`
 - [ ] `Enumerable#my_map`
 - [x] `Enumerable#my_none?`
-- [ ] `Enumerable#my_select`
+- [x] `Enumerable#my_select`
