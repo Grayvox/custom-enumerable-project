@@ -45,6 +45,13 @@ module Enumerable
     end
   end
 
+  def my_inject(initial = nil)
+    result = self.first
+    self.my_each { |element| result = yield(result, element) } if block_given?
+    result += initial unless initial.nil?
+    result - self.first
+  end
+
   def my_map(&block)
     arr = []
     self.my_each { |element| arr << element if element } unless block_given?

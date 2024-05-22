@@ -9,7 +9,7 @@ This repository complements the [Custom Enumerables Project](https://www.theodin
 - [x] `Enumerable#my_count`
 - [x] `Enumerable#my_each`
 - [x] `Enumerable#my_each_with_index`
-- [ ] `Enumerable#my_inject`
+- [x] `Enumerable#my_inject`
 - [x] `Enumerable#my_map`
 - [x] `Enumerable#my_none?`
 - [x] `Enumerable#my_select`
